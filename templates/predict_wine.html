@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% from 'bootstrap5/form.html' import render_form %}
+{% block title %}Prediction{% endblock %}
+
+{% block content %}
+
+
+<div class="content">
+    <h1 class="heading">Please enter the following parameters:</h1>
+    {{ render_form(form, novalidate=True) }}
+</div>
+
+
+{{ prediction }}
+<p><a href="{{ url_for('home') }}">Return to index page</a></p>
+{% endblock %}

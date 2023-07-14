@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block title %}Wine Quality Prediction Webapp{% endblock %}
+
+{% block content %}
+
+
+<div class="jumbotron text-center">
+    <div class="container">
+  <h1 class="display-4">🍷️ Wine Quality🍷</h1>
+  <p class="lead">Want to work predict the quality of a specific wine?</p>
+  <hr class="my-4">
+  <p>You've found the right place. A machine learning model to classify wines and predict its quality.</p>
+  <a class="btn btn-warning btn-lg" href="{{ url_for('predict') }}" role="button">Take me there!</a>
+</div>
+    </div>
+
+{% endblock %}
