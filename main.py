@@ -14,7 +14,7 @@ app.config['SECRET_KEY'] = '8BYkEfBA6O6donzWlSihBXox7C0sKR6b'
 le = joblib.load('labelEncoder.joblib')
 model = joblib.load('final_prod_model.pkl')
 
-CombinedAttributesAdder = CombinedAttributesAdder()
+
 
 
 class WineForm(FlaskForm):
